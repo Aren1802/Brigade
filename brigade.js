@@ -13,9 +13,9 @@ events.on("exec", (e,project) => {
     "dockerd-entrypoint.sh &",
     "sleep 30",
     "cd /src",
-    "docker build -t Aren1802/brigade-test:latest .",
+    "docker build -t Aren1802/brigade-test:20 .",
     "docker login -u $DOCKER_USER -p $DOCKER_PASS",
-    "docker push Aren1802/brigade-test:50"
+    "docker push Aren1802/brigade-test:20"
   ];
   
   dockerBuild.run();
